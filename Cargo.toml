@@ -1,0 +1,12 @@
+[package]
+name = "w_inter"
+version = "0.1.0"
+edition = "2021"
+authors = ["Will Brickner <wgbrickner@gmail.com>"]
+description = "❄️ Weighted INTERval scheduling problem"
+keywords = ["optimization", "interval", "scheduling", "weighted", "interval scheduling", "scheduler"]
+license = "MIT"
+readme = "README.md"
+repository = ""
+
+[dependencies]
