@@ -1,7 +1,7 @@
 //! A pair of solvers for the [Weighted Interval Scheduling Problem](https://en.wikipedia.org/wiki/Interval_scheduling).
 //! 
 //! #### Features
-//! - Zero external dependencies, although requires an allocator.
+//! - Zero external dependencies, although requires an allocator (not optional yet).
 //! - Flexible: anything implementing `Ord + Add + Clone` may be thought of as an interval bound or a weight type.
 //! - Efficient: running in `O(n log n)`.
 //! - Fast: cache-aware, zero-reallocation APIs are available.
@@ -45,8 +45,6 @@
 //! ```
 //! 
 //! #### Fast (Amortized Allocation) Example
-//! <details>
-//!   <summary>Click to view pseudocode</summary>
 //!   
 //! ```rust
 //! // our goal is to allocate once and reuse the same buffers
@@ -79,16 +77,6 @@
 //!   // we can now use the `soln` buffer before it's recycled
 //! }
 //! ```
-//! </details>
-//! 
-//! #### Outlook
-//! 
-//! I have ambitions to expand the scope to other (weighted) discrete optimization problems,
-//! the ultimate goal being to provide an efficient, correct, and easy-to-use toolkit, documented in plain english, accessible to everyone.
-//! 
-//! I'm pretty busy. If you have an algorithm in mind, submit a pull request.
-//! 
-//! The public API will probably change as the project evolves.
 //! 
 
 mod traits;

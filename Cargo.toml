@@ -7,6 +7,6 @@ description = "❄️ Weighted INTERval scheduling problem"
 keywords = ["optimization", "interval", "scheduling", "weighted", "interval scheduling", "scheduler"]
 license = "MIT"
 readme = "README.md"
-repository = ""
+repository = "https://github.com/wbrickner/w_inter/"
 
 [dependencies]
